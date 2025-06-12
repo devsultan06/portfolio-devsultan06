@@ -4,7 +4,7 @@ import { IoLogoInstagram } from "react-icons/io";
 
 const Footer = () => {
     return (
-        <div className="flex justify-between gap-4 mt-[300px] text-[16px]   bg-slate900 text-slate400">
+        <div className="flex border-t border-slate justify-between gap-4 text-[16px]   bg-slate900 text-slate400">
             <div className="flex items-center max-900:justify-between">
                 <div className="max-900:border-none border-r border-slate">
                     <h1 className=" py-[16px] px-[24px]">find me in:</h1>

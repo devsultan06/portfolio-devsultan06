@@ -71,7 +71,7 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className="menu px-[24px] hidden max-900:block cursor-pointer " onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
+                <div className="menu px-[24px] hidden max-900:block relative z-30 cursor-pointer " onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
                     <img src="/images/menu.png" alt="menu" className=" " />
                 </div>
             </div>

@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom"
+
+import { IoLogoInstagram } from "react-icons/io";
+
 
 const Footer = () => {
     return (
@@ -9,31 +11,33 @@ const Footer = () => {
                 </div>
 
                 <div className="flex justify-between max-900:hidden ">
-                    <Link
-                        to=" "
+                    <a
+                        href="https://x.com/devsultan06"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="py-[16px] px-[16px] border-r border-slate"
                     >
-
                         <img src="/images/x.svg" alt="footer" className="w-[24px] h-[24px]" />
-                    </Link>
+                    </a>
 
-                    <Link
-                        to=" "
+                    <a
+                        href="https://www.instagram.com/devsultan06"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="py-[16px] px-[16px] border-r border-slate"
-
                     >
-                        <img src="/images/linkedin.svg" alt="footer" className="w-[24px] h-[24px]" />
+                        <IoLogoInstagram className="w-[26px] h-[26px]" />
+                    </a>
 
-                    </Link>
 
-                    <Link
-                        to=" "
-                        className="py-[16px] hidden max-900:block px-[16px] border-r border-slate"
-
+                    <a
+                        href="https://github.com/devsultan06"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="py-[16px] px-[16px] border-r border-slate"
                     >
                         <img src="/images/github.svg" alt="footer" className="w-[24px] h-[24px]" />
-
-                    </Link>
+                    </a>
                 </div>
 
 
@@ -43,42 +47,48 @@ const Footer = () => {
             </div>
 
             <div className=" justify-between hidden max-900:flex ">
-                <Link
-                    to=" "
+                <a
+                    href="https://x.com/devsultan06"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="py-[16px] px-[16px] border-l border-r border-slate"
                 >
-
                     <img src="/images/x.svg" alt="footer" className="w-[24px] h-[24px]" />
-                </Link>
+                </a>
 
-                <Link
-                    to=" "
-                    className="py-[16px] px-[16px] border-r border-slate"
-
+                <a
+                    href="https://www.instagram.com/devsultan06"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="py-[16px] text-slate500 px-[16px] border-r border-slate"
                 >
-                    <img src="/images/linkedin.svg" alt="footer" className="w-[24px] h-[24px]" />
+                    <IoLogoInstagram className="w-[26px] h-[26px]" />
+                </a>
 
-                </Link>
-
-                <Link
-                    to=" "
+                <a
+                    href="https://github.com/devsultan06"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="py-[16px] hidden max-900:block px-[16px] border-r border-slate"
-
                 >
                     <img src="/images/github.svg" alt="footer" className="w-[24px] h-[24px]" />
+                </a>
 
-                </Link>
+
+
             </div>
 
             <div className="flex items-center max-900:hidden border-l border-slate">
-                <Link
-                    to=" "
+                <a
+                    href="https://github.com/devsultan06"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2  px-[24px]  text-slate400 text-[16px] font-[450]"
                 >
                     @devsultan06
                     <img src="/images/github.svg" alt="footer" className="" />
+                </a>
 
-                </Link>
             </div>
         </div>
     )

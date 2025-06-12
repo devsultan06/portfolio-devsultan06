@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { IoLogoInstagram } from "react-icons/io";
 import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
@@ -34,7 +35,9 @@ const Navbar = () => {
         <>
             <div className="flex text-slate400 text-[16px] font-[450] justify-between items-center border-b border-slate pl-[24px] h-[54px] bg-slate900">
                 <div className="flex items-center space-x-[128px] max-900:space-x-[20px] max-600:space-x-[32px]">
-                    <div>
+                    <div className="flex items-center space-x-[8px]">
+                        <img src="/images/favi.png" alt="" className="w-[30px] h-[30px] rounded-full" />
+
                         <h1>devsultan</h1>
                     </div>
 
@@ -84,10 +87,15 @@ const Navbar = () => {
                         animate={{ x: 0 }}
                         exit={{ x: "-100%" }}
                         transition={{ type: "tween", duration: 0.3 }}
-                        className="fixed inset-0 bg-slate900 z-50  flex flex-col"
+                        className="fixed inset-0 font-firacode bg-slate900 z-50  flex flex-col"
                     >
                         <div className="flex justify-between items-center border-b border-slate py-[16px] pl-[24px] pr-[16px]">
-                            <h2 className="text-[16px] text-slate400 ">devsultan</h2>
+                            <div className="flex items-center space-x-[8px]">
+                                <img src="/images/favi.png" alt="" className="w-[30px] h-[30px] rounded-full" />
+                                <h2 className="text-[16px] text-slate400 ">devsultan</h2>
+
+
+                            </div>
                             <img
                                 src="/images/close.png "
                                 onClick={() => setMobileMenuOpen(false)}
@@ -126,31 +134,34 @@ const Navbar = () => {
                             </div>
 
                             <div className=" justify-between hidden max-900:flex ">
-                                <Link
-                                    to=" "
+
+                                <a
+                                    href="https://x.com/devsultan06"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="py-[16px] px-[16px] border-l border-r border-slate"
                                 >
-
                                     <img src="/images/x.svg" alt="footer" className="w-[24px] h-[24px]" />
-                                </Link>
+                                </a>
 
-                                <Link
-                                    to=" "
-                                    className="py-[16px] px-[16px] border-r border-slate"
-
+                                <a
+                                    href="https://www.instagram.com/devsultan06"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="py-[16px] text-slate500 px-[16px] border-r border-slate"
                                 >
-                                    <img src="/images/linkedin.svg" alt="footer" className="w-[24px] h-[24px]" />
+                                    <IoLogoInstagram className="w-[26px] h-[26px]" />
+                                </a>
 
-                                </Link>
 
-                                <Link
-                                    to=" "
+                                <a
+                                    href="https://github.com/devsultan06"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="py-[16px] hidden max-900:block px-[16px] border-r border-slate"
-
                                 >
                                     <img src="/images/github.svg" alt="footer" className="w-[24px] h-[24px]" />
-
-                                </Link>
+                                </a>
                             </div>
 
                         </div>

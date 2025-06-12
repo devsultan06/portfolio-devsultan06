@@ -10,7 +10,7 @@ const Footer = () => {
                     <h1 className=" py-[16px] px-[24px]">find me in:</h1>
                 </div>
 
-                <div className="flex justify-between max-900:hidden ">
+                <div className="flex justify-between max-900:hidden relative z-30 ">
                     <a
                         href="https://x.com/devsultan06"
                         target="_blank"
@@ -35,7 +35,7 @@ const Footer = () => {
 
             </div>
 
-            <div className=" justify-between hidden max-900:flex ">
+            <div className=" justify-between hidden max-900:flex  relative z-30">
                 <a
                     href="https://x.com/devsultan06"
                     target="_blank"
@@ -67,7 +67,7 @@ const Footer = () => {
 
             </div>
 
-            <div className="flex items-center max-900:hidden border-l border-slate">
+            <div className="flex items-center relative z-30 max-900:hidden border-l border-slate">
                 <a
                     href="https://github.com/devsultan06"
                     target="_blank"

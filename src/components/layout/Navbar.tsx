@@ -31,7 +31,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="flex text-slate400 text-[16px] font-[450] justify-between items-center border-b border-slate pl-[24px] h-[54px] bg-slate900">
+            <div className="flex text-slate400 text-[16px] font-[450] justify-between items-center border-b border-slate pl-[24px] h-[54px] bg-slate900 ">
                 <div className="flex items-center space-x-[128px] max-900:space-x-[20px] max-600:space-x-[32px]">
                     <div className="flex items-center space-x-[8px]">
                         <img src="/images/favi.png" alt="" className="w-[30px] h-[30px] rounded-full" />
@@ -39,7 +39,7 @@ const Navbar = () => {
                         <h1>devsultan</h1>
                     </div>
 
-                    <div className="block max-900:hidden">
+                    <div className="block max-900:hidden relative z-30">
                         <ul className="flex">
                             {navLinks.slice(0, 3).map((link) => {
                                 const isActive = location.pathname === link.href;
@@ -59,7 +59,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className="block max-900:hidden">
+                <div className="block max-900:hidden relative z-30">
                     <Link
                         to="/contact"
                         className={`py-[16px] px-[24px] max-900:px-[15px] border-l border-slate transition-all ${location.pathname === "/contact"

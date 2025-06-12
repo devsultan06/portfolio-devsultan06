@@ -30,18 +30,7 @@ const Footer = () => {
                     </a>
 
 
-                    <a
-                        href="https://github.com/devsultan06"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="py-[16px] px-[16px] border-r border-slate"
-                    >
-                        <img src="/images/github.svg" alt="footer" className="w-[24px] h-[24px]" />
-                    </a>
                 </div>
-
-
-
 
 
             </div>

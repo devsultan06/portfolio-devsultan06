@@ -14,7 +14,6 @@ const Navbar = () => {
     const location = useLocation();
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-    // Close on screen resize > 900px
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth > 900) {
@@ -26,7 +25,6 @@ const Navbar = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    // Close menu when route changes
     useEffect(() => {
         setMobileMenuOpen(false);
     }, [location.pathname]);

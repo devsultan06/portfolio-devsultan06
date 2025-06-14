@@ -94,7 +94,7 @@ const PanelRight = ({
 
 
                 <div className="flex-[1] py-4">
-                    <h1>Hello</h1>
+                    <h1 className="text-slate400">// Code snippet showcase:</h1>
                 </div>
             </div>
 

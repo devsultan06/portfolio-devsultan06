@@ -1,29 +1,65 @@
-import { Link } from "react-router-dom"
 
-const Sidebar = () => {
+
+import { useState } from "react";
+import PanelLeft from "./PanelLeft";
+
+const Sidebar = ({
+    onSectionChange,
+    active,
+}: {
+    onSectionChange: (section: string) => void;
+    active: string;
+}) => {
+    const [hovered, setHovered] = useState<string | null>(null);
+
+    const tabs = [
+        {
+            id: "professional",
+            defaultImg: "/images/prf.svg",
+            activeImg: "/images/prfa.svg",
+        },
+        {
+            id: "personal",
+            defaultImg: "/images/perso.svg",
+            activeImg: "/images/persoa.svg",
+        },
+        {
+            id: "hobbies",
+            defaultImg: "/images/hobbies.svg",
+            activeImg: "/images/hobbiesa.svg",
+        },
+    ];
+
     return (
-        <div className="pt-[12px]  bg-slate900 pl-[20.5px] pr-[24.5px]  border-r border-slate ">
+        <div className="flex bg-slate-900 w-[277.5px] border-r bg-slate900 border-slate">
+            <div className="pt-[12px] pl-[20.5px] pr-[24.5px] border-r border-slate">
+                {tabs.map((tab) => {
+                    const isHovered = hovered === tab.id;
+                    const isActive = active === tab.id;
 
-            <Link
-                to="/"
-            >
-                <img src="/images/prf.svg" alt="logo" className=" mb-[32px]" />
-            </Link>
+                    return (
+                        <button
+                            key={tab.id}
+                            onClick={() => onSectionChange(tab.id)}
+                            onMouseEnter={() => setHovered(tab.id)}
+                            onMouseLeave={() => setHovered(null)}
+                            className="block mb-[32px] focus:outline-none"
+                        >
+                            <img
+                                src={isHovered || isActive ? tab.activeImg : tab.defaultImg}
+                                alt={tab.id}
+                                className="transition duration-200"
+                            />
+                        </button>
+                    );
+                })}
+            </div>
 
-            <Link
-                to="/"
-            >
-                <img src="/images/perso.svg" alt="logo" className=" mb-[32px]" />
-            </Link>
-
-            <Link
-                to="/"
-            >
-                <img src="/images/hobbies.svg" alt="logo" className=" mb-[16px]" />
-            </Link>
-
+            <div className="  pl-[24px] text-white ">
+                <PanelLeft active={active} />
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Sidebar
+export default Sidebar;

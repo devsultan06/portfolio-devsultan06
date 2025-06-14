@@ -70,7 +70,7 @@ const About = () => {
 
 
 
-                <div className="flex-[3] bg-slate900 text-white">
+                <div className="flex-[3] bg-slate900 text-white overflow-hidden relative">
                     <PanelRight
                         openedTabs={openedTabs}
                         activeTab={activeTab}

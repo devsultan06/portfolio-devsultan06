@@ -41,33 +41,49 @@ const PanelRight = ({
     };
 
     return (
-        <div className="font-[450] text-slate400">
-            <div className="tabs flex border-b border-slate">
-                {openedTabs.map((tab) => (
-                    <div
-                        key={tab}
-                        className={`educa border-r border-slate flex items-center gap-[54px] px-[23px] py-[12px] cursor-pointer ${tab === activeTab ? "bg-slate-700 text-white" : ""
-                            }`}
-                        onClick={() => setActiveTab(tab)}
-                    >
-                        <h1 className="">{tab}</h1>
-                        {tab !== "about-me" && (
-                            <img
-                                src="/images/close.svg"
-                                alt="close"
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    onCloseTab(tab);
-                                }}
-                                className="cursor-pointer"
-                            />
-                        )}
+        <div>
+            <div className="flex border-b border-slate">
+                <div className="font-[450] text-slate400">
+                    <div className="tabs flex ">
+                        {openedTabs.map((tab) => (
+                            <div
+                                key={tab}
+                                className={`educa border-r border-slate flex items-center gap-[54px] px-[23px] py-[12px] cursor-pointer ${tab === activeTab ? "bg-slate-700 text-white" : ""
+                                    }`}
+                                onClick={() => setActiveTab(tab)}
+                            >
+                                <h1 className="">{tab}</h1>
+                                {tab !== "about-me" && (
+                                    <img
+                                        src="/images/close.svg"
+                                        alt="close"
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            onCloseTab(tab);
+                                        }}
+                                        className="cursor-pointer"
+                                    />
+                                )}
 
+                            </div>
+                        ))}
                     </div>
-                ))}
+                </div>
+
             </div>
-            <div className="p-4">{renderContent()}</div>
+
+            <div className="flex">
+
+                <div className="flex-[1]">{renderContent()}</div>
+
+
+                <div className="flex-[1] py-4">
+                    <h1>Hello</h1>
+                </div>
+            </div>
+
         </div>
+
     );
 };
 

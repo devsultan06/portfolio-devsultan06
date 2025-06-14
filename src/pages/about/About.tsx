@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import Navbar from "../../components/layout/Navbar";
 import Footer from "../../components/layout/Footer";
+import Sidebar from "./components/Sidebar";
 
 const About = () => {
 
@@ -16,7 +17,11 @@ const About = () => {
         <div className="font-firacode">
             <Navbar />
 
-                        <Footer />
+            <div className="h-[667px] flex">
+                <Sidebar />
+            </div>
+
+            <Footer />
 
 
         </div>

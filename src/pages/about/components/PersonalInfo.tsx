@@ -1,19 +1,161 @@
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
 
 const PersonalInfo = () => {
+
+    const [openSection, setOpenSection] = useState<string | null>(null);
+
+    const toggleSection = (section: string) => {
+        setOpenSection(prev => (prev === section ? null : section));
+    };
+
+    const getArrowIcon = (section: string) =>
+        openSection === section ? "/images/adl.svg" : "/images/ar.svg";
     return (
-        <div>
+        <div className="font-[450]  text-slate400 ">
             <div>
-                <div>
+                <div className="flex gap-[12px] mb-[12px] pl-[24px] pr-[72px] whitespace-nowrap border-b border-slate py-[16px]">
                     <img src="/images/ad.svg" alt="Profile" />
-                    <h1>personal-info</h1>
+                    <h1 className="text-slate50 text-[16px] ">personal-info</h1>
                 </div>
 
-                <div className="bio">
+                <div className="border-b border-slate py-[12px] pl-[24px] pr-[29px] whitespace-nowrap">
+                    <div className="mb-[12px]">
+                        <div
+                            className="bio flex gap-[12px] mb-[8px] cursor-pointer"
+                            onClick={() => toggleSection("bio")}
+                        >
+                            <img
+                                src={
+                                    openSection === "bio"
+                                        ? "/images/adl.svg"
+                                        : "/images/ar.svg"
+                                }
+                                alt="Arrow"
+                            />
+                            <div className="flex gap-[8px] text-[16px]">
+                                <img src="/images/bio.svg" alt="Bio" />
+                                <p>bio</p>
+                            </div>
+                        </div>
+
+                        <AnimatePresence initial={false}>
+                            {openSection === "bio" && (
+                                <motion.div
+                                    initial={{ height: 0, opacity: 0 }}
+                                    animate={{ height: "auto", opacity: 1 }}
+                                    exit={{ height: 0, opacity: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="overflow-hidden pl-[26px]"
+                                >
+                                    <div className="flex gap-[8px] text-[16px] mb-[8px]">
+                                        <img src="/images/mark.svg" alt="dot" />
+                                        <p>about-me</p>
+                                    </div>
+                                    <div className="flex  gap-[8px] text-[16px]">
+                                        <img src="/images/mark.svg" alt="dot" />
+                                        <p>my-cv</p>
+                                    </div>
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
+                    </div>
+                    <div className="mb-[12px]">
+                        <div
+                            className="flex gap-[12px] mb-[8px] cursor-pointer"
+                            onClick={() => toggleSection("interests")}
+                        >
+                            <img src={getArrowIcon("interests")} alt="Arrow" />
+                            <div className="flex gap-[8px]   text-[16px]">
+                                <img src="/images/int.svg" alt="Interests" />
+                                <p>interests</p>
+                            </div>
+                        </div>
+
+                        <AnimatePresence initial={false}>
+                            {openSection === "interests" && (
+                                <motion.div
+                                    initial={{ height: 0, opacity: 0 }}
+                                    animate={{ height: "auto", opacity: 1 }}
+                                    exit={{ height: 0, opacity: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="overflow-hidden pl-[26px]"
+                                >
+                                    <div className="flex gap-[8px]  text-[16px] mb-[8px]">
+                                        <img src="/images/mark.svg" alt="dot" />
+                                        <p>design</p>
+                                    </div>
+                                    <div className="flex gap-[8px] text-[16px]">
+                                        <img src="/images/mark.svg" alt="dot" />
+                                        <p>gaming</p>
+                                    </div>
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
+                    </div>
+
+                    {/* EDUCATION */}
+                    <div>
+                        <div
+                            className="flex gap-[12px] mb-[8px] cursor-pointer"
+                            onClick={() => toggleSection("education")}
+                        >
+                            <img src={getArrowIcon("education")} alt="Arrow" />
+                            <div className="flex gap-[8px] text-[16px]">
+                                <img src="/images/edu.svg" alt="Education" />
+                                <p>education</p>
+                            </div>
+                        </div>
+
+                        <AnimatePresence initial={false}>
+                            {openSection === "education" && (
+                                <motion.div
+                                    initial={{ height: 0, opacity: 0 }}
+                                    animate={{ height: "auto", opacity: 1 }}
+                                    exit={{ height: 0, opacity: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="overflow-hidden pl-[26px]"
+                                >
+                                    <div className="flex gap-[8px] text-[16px] mb-[8px]">
+                                        <img src="/images/mark.svg" alt="dot" />
+                                        <p>high-school</p>
+                                    </div>
+                                    <div className="flex gap-[8px] text-[16px]">
+                                        <img src="/images/mark.svg" alt="dot" />
+                                        <p>university</p>
+                                    </div>
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
+                    </div>
+                </div>
+
+
+
+            </div >
+
+            <div>
+                <div className="flex gap-[12px] mb-[12px] pl-[24px] pr-[29px] whitespace-nowrap border-b border-slate py-[16px]">
+                    <img src="/images/ad.svg" alt="Profile" />
+                    <h1 className="text-slate50 text-[16px] ">contacts</h1>
+                </div>
+                <div className="flex gap-[8px] text-[14px] mb-[8px] pl-[24px]  ">
+                    <img src="/images/mes.svg" alt="Location" />
+                    <p>sultanabaniks@gmail.com</p>
 
                 </div>
+
+                <div className="flex gap-[8px] text-[14px]  pl-[24px] pr-[29px]">
+                    <img src="/images/pho.svg" alt="Location" />
+                    <p>+2347036886069</p>
+
+                </div>
+
+
 
             </div>
-        </div>
+        </div >
     )
 }
 

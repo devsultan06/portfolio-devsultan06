@@ -31,7 +31,7 @@ const Sidebar = ({
     ];
 
     return (
-        <div className="flex bg-slate-900 w-[277.5px] border-r bg-slate900 border-slate">
+        <div className="flex bg-slate-900 w-[318.9px] border-r bg-slate900 border-slate">
             <div className="pt-[12px] pl-[20.5px] pr-[24.5px] border-r border-slate">
                 {tabs.map((tab) => {
                     const isHovered = hovered === tab.id;
@@ -55,7 +55,7 @@ const Sidebar = ({
                 })}
             </div>
 
-            <div className="  pl-[24px] text-white ">
+            <div className="  ">
                 <PanelLeft active={active} />
             </div>
         </div>

@@ -32,7 +32,7 @@ const Navbar = () => {
     return (
         <>
             <div className="flex text-slate400 text-[16px] font-[450] justify-between items-center border-b border-slate pl-[24px] h-[54px] bg-slate900 ">
-                <div className="flex items-center space-x-[128px] max-900:space-x-[20px] max-600:space-x-[32px]">
+                <div className="flex items-center space-x-[170px] max-900:space-x-[20px] max-600:space-x-[32px]">
                     <div className="flex items-center space-x-[8px]">
                         <img src="/images/favi.png" alt="" className="w-[30px] h-[30px] rounded-full" />
 

@@ -10,7 +10,6 @@ const PanelRight = ({
     openedTabs,
     activeTab,
     setActiveTab,
-    setOpenedTabs,
     onCloseTab,
 }: {
     openedTabs: string[];

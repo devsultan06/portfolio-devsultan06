@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import Navbar from "../../components/layout/Navbar";
 import Footer from "../../components/layout/Footer";
 import Sidebar from "./components/Sidebar";
-import PanelLeft from "./components/PanelLeft";
 import PanelRight from "./components/PanelRight";
 
 const About = () => {

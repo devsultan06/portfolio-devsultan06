@@ -2,7 +2,14 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 
-const PersonalInfo = () => {
+const PersonalInfo = ({
+    activeTab,
+    onBarChange
+}: {
+    activeTab: string;
+    onBarChange: (bar: string) => void;
+}
+) => {
 
     const [openSection, setOpenSection] = useState<string | null>(null);
 
@@ -15,7 +22,7 @@ const PersonalInfo = () => {
     return (
         <div className="font-[450]  text-slate400 ">
             <div>
-                <div className="flex gap-[12px] mb-[12px] pl-[24px] pr-[72px] whitespace-nowrap border-b border-slate py-[16px]">
+                <div className="flex gap-[12px] mb-[12px] pl-[24px] pr-[72px] whitespace-nowrap border-b border-slate py-[12px]">
                     <img src="/images/ad.svg" alt="Profile" />
                     <h1 className="text-slate50 text-[16px] ">personal-info</h1>
                 </div>
@@ -49,11 +56,13 @@ const PersonalInfo = () => {
                                     transition={{ duration: 0.3 }}
                                     className="overflow-hidden pl-[26px]"
                                 >
-                                    <div className="flex gap-[8px] text-[16px] mb-[8px]">
-                                        <img src="/images/mark.svg" alt="dot" />
+                                    <div onClick={() => onBarChange("about-me")}
+                                        className={`flex transition-all duration-400 cursor-pointer gap-[8px] text-[16px] mb-[8px] hover:text-slate50 ${activeTab === "about-me" ? "text-slate50" : ""}`}
+                                    >                                        <img src="/images/mark.svg" alt="dot" />
                                         <p>about-me</p>
                                     </div>
-                                    <div className="flex  gap-[8px] text-[16px]">
+                                    <div onClick={() => onBarChange("my-cv")} className={`flex transition-all duration-400 cursor-pointer gap-[8px] text-[16px] mb-[8px] hover:text-slate50 ${activeTab === "my-cv" ? "text-slate50" : ""}`}
+                                    >
                                         <img src="/images/mark.svg" alt="dot" />
                                         <p>my-cv</p>
                                     </div>
@@ -82,11 +91,13 @@ const PersonalInfo = () => {
                                     transition={{ duration: 0.3 }}
                                     className="overflow-hidden pl-[26px]"
                                 >
-                                    <div className="flex gap-[8px]  text-[16px] mb-[8px]">
-                                        <img src="/images/mark.svg" alt="dot" />
+                                    <div onClick={() => onBarChange("design")}
+                                        className={`flex transition-all duration-400 cursor-pointer gap-[8px] text-[16px] mb-[8px] hover:text-slate50 ${activeTab === "design" ? "text-slate50" : ""}`}
+                                    >                                        <img src="/images/mark.svg" alt="dot" />
                                         <p>design</p>
                                     </div>
-                                    <div className="flex gap-[8px] text-[16px]">
+                                    <div onClick={() => onBarChange("gaming")} className={`flex transition-all duration-400 cursor-pointer gap-[8px] text-[16px] mb-[8px] hover:text-slate50 ${activeTab === "gaming" ? "text-slate50" : ""}`}
+                                    >
                                         <img src="/images/mark.svg" alt="dot" />
                                         <p>gaming</p>
                                     </div>
@@ -117,11 +128,13 @@ const PersonalInfo = () => {
                                     transition={{ duration: 0.3 }}
                                     className="overflow-hidden pl-[26px]"
                                 >
-                                    <div className="flex gap-[8px] text-[16px] mb-[8px]">
-                                        <img src="/images/mark.svg" alt="dot" />
+                                    <div onClick={() => onBarChange("high-school")}
+                                        className={`flex transition-all duration-400 cursor-pointer gap-[8px] text-[16px] mb-[8px] hover:text-slate50 ${activeTab === "high-school" ? "text-slate50" : ""}`}
+                                    >                                        <img src="/images/mark.svg" alt="dot" />
                                         <p>high-school</p>
                                     </div>
-                                    <div className="flex gap-[8px] text-[16px]">
+                                    <div onClick={() => onBarChange("university")} className={`flex transition-all duration-400 cursor-pointer gap-[8px] text-[16px] mb-[8px] hover:text-slate50 ${activeTab === "university" ? "text-slate50" : ""}`}
+                                    >
                                         <img src="/images/mark.svg" alt="dot" />
                                         <p>university</p>
                                     </div>
@@ -136,7 +149,7 @@ const PersonalInfo = () => {
             </div >
 
             <div>
-                <div className="flex gap-[12px] mb-[12px] pl-[24px] pr-[29px] whitespace-nowrap border-b border-slate py-[16px]">
+                <div className="flex gap-[12px] mb-[12px] pl-[24px] pr-[29px] whitespace-nowrap border-b border-slate py-[12px]">
                     <img src="/images/ad.svg" alt="Profile" />
                     <h1 className="text-slate50 text-[16px] ">contacts</h1>
                 </div>

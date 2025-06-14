@@ -10,7 +10,7 @@ const Hello = () => {
     useEffect(() => {
         const timeout1 = setTimeout(() => setShowLine1(true), 500);
         const timeout2 = setTimeout(() => setShowLine2(true), 1500);
-        const timeout3 = setTimeout(() => setShowLine3(true), 2500); 
+        const timeout3 = setTimeout(() => setShowLine3(true), 2500);
 
         return () => {
             clearTimeout(timeout1);
@@ -74,6 +74,11 @@ const Hello = () => {
                             </span>
                         </p>
                     </a>
+
+                    <button className="relative overflow-hidden mt-[18px] font-[450] rounded-[8px] border-[3px] hover:border-[3px] hover:border-orange border-slate hover:text-[#020618] py-[10px] px-[12px] text-slate50 text-[14px] group">
+                        <span className="relative z-10 ">download my-cv</span>
+                        <span className="absolute left-0 top-0 h-full w-0 bg-orange transition-all duration-400 group-hover:w-full z-0"></span>
+                    </button>
                 </div>
             </div>
 

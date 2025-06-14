@@ -6,9 +6,13 @@ import PanelLeft from "./PanelLeft";
 const Sidebar = ({
     onSectionChange,
     active,
+    onBarChange,
+    activeTab
 }: {
     onSectionChange: (section: string) => void;
     active: string;
+    onBarChange: (bar: string) => void;
+    activeTab: string;
 }) => {
     const [hovered, setHovered] = useState<string | null>(null);
 
@@ -20,7 +24,7 @@ const Sidebar = ({
         },
         {
             id: "personal",
-            defaultImg: "/images/perso.svg",
+            defaultImg: "/images/persoa.svg",
             activeImg: "/images/persoa.svg",
         },
         {
@@ -56,7 +60,7 @@ const Sidebar = ({
             </div>
 
             <div className="  ">
-                <PanelLeft active={active} />
+                <PanelLeft active={active} activeTab={activeTab} onBarChange={onBarChange} />
             </div>
         </div>
     );

@@ -89,21 +89,66 @@ const PersonalInfo = ({
                                     animate={{ height: "auto", opacity: 1 }}
                                     exit={{ height: 0, opacity: 0 }}
                                     transition={{ duration: 0.3 }}
-                                    className="overflow-hidden pl-[26px]"
+                                    className="overflow-hidden pl-[26px] space-y-[12px]"
                                 >
-                                    <div onClick={() => onBarChange("design")}
-                                        className={`flex transition-all duration-400 cursor-pointer gap-[8px] text-[16px] mb-[8px] hover:text-slate50 ${activeTab === "design" ? "text-slate50" : ""}`}
-                                    >                                        <img src="/images/mark.svg" alt="dot" />
-                                        <p>design</p>
+                                    {/* Career Interests */}
+                                    <div>
+                                        <p className=" text-[16px] text-slate400 mb-[6px]">career</p>
+                                        <div
+                                            onClick={() => onBarChange("problem-solving")}
+                                            className={`flex gap-[8px] text-[16px] cursor-pointer hover:text-slate50 mb-[4px] ${activeTab === "problem-solving" ? "text-slate50" : ""
+                                                }`}
+                                        >
+                                            <img src="/images/mark.svg" alt="dot" />
+                                            <p>problem-solving</p>
+                                        </div>
+                                        <div
+                                            onClick={() => onBarChange("startups")}
+                                            className={`flex gap-[8px] text-[16px] cursor-pointer hover:text-slate50 ${activeTab === "startups" ? "text-slate50" : ""
+                                                }`}
+                                        >
+                                            <img src="/images/mark.svg" alt="dot" />
+                                            <p>startups</p>
+                                        </div>
                                     </div>
-                                    <div onClick={() => onBarChange("gaming")} className={`flex transition-all duration-400 cursor-pointer gap-[8px] text-[16px] mb-[8px] hover:text-slate50 ${activeTab === "gaming" ? "text-slate50" : ""}`}
-                                    >
-                                        <img src="/images/mark.svg" alt="dot" />
-                                        <p>gaming</p>
+
+                                    {/* Creative Interests */}
+                                    <div>
+                                        <p className=" text-[16px] text-slate400 mb-[6px]">creative</p>
+                                        <div
+                                            onClick={() => onBarChange("content-writing")}
+                                            className={`flex gap-[8px] text-[16px] cursor-pointer hover:text-slate50 mb-[4px] ${activeTab === "content-writing" ? "text-slate50" : ""
+                                                }`}
+                                        >
+                                            <img src="/images/mark.svg" alt="dot" />
+                                            <p>content-writing</p>
+                                        </div>
+                                        <div
+                                            onClick={() => onBarChange("ui-refinement")}
+                                            className={`flex gap-[8px] text-[16px] cursor-pointer hover:text-slate50 ${activeTab === "ui-refinement" ? "text-slate50" : ""
+                                                }`}
+                                        >
+                                            <img src="/images/mark.svg" alt="dot" />
+                                            <p>ui-refinement</p>
+                                        </div>
+                                    </div>
+
+                                    {/* Personal Interests */}
+                                    <div>
+                                        <p className=" text-[16px] text-slate400 mb-[6px]">personal</p>
+                                        <div
+                                            onClick={() => onBarChange("self-improvement")}
+                                            className={`flex gap-[8px] text-[16px] cursor-pointer hover:text-slate50 ${activeTab === "self-improvement" ? "text-slate50" : ""
+                                                }`}
+                                        >
+                                            <img src="/images/mark.svg" alt="dot" />
+                                            <p>self-improvement</p>
+                                        </div>
                                     </div>
                                 </motion.div>
                             )}
                         </AnimatePresence>
+
                     </div>
 
                     {/* EDUCATION */}

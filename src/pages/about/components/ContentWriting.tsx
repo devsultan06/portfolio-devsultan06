@@ -1,7 +1,7 @@
 
 const ContentWriting = () => {
     return (
-        <div className="h-[667px] overflow-y-auto custom-scrollbar px-[40px] text-slate400 text-[18px] font-[450] pt-[12px] pb-[100px] leading-[32px]">
+        <div className="h-[667px]  max-1300:h-fit overflow-y-auto custom-scrollbar px-[40px] text-slate400 text-[18px] font-[450] pt-[12px] pb-[100px] leading-[32px]">
             <p className="mb-[10px]"><span className="mr-[40px]">1</span>  /**</p>
             <p className="mb-[10px]"><span className="mr-[40px]">2</span> <span></span>   * Content Writing</p>
             <p className="mb-[10px]"><span className="mr-[40px]">3</span>   <span></span>* I’ve always had a spark for writing. Recently, I started leaning into it—writing about code, creativity, and my developer journey.</p>

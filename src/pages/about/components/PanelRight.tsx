@@ -1,12 +1,11 @@
 import AboutMe from "./AboutMe";
 import ContentWriting from "./ContentWriting";
-import Design from "./Design";
-import Gaming from "./Gaming";
 import HighSchool from "./HighSchool";
 import Hobbies from "./Hobbies";
 import MyCV from "./MyCV";
 import ProSolving from "./ProSolving";
 import Self from "./Self";
+import SnippetList from "./SnippetList";
 import Startups from "./Startups";
 import Uirefine from "./Uirefine";
 import University from "./University";
@@ -35,11 +34,6 @@ const PanelRight = ({
                 return <University />; // Placeholder for university content
             case "high-school":
                 return <HighSchool />; // Placeholder for high school content    
-            case "gaming":
-                return <Gaming />
-            case "design":
-                return <Design />
-
             case "problem-solving":
                 return <ProSolving />; // Placeholder for high school content    
             case "startups":
@@ -88,13 +82,15 @@ const PanelRight = ({
 
             </div>
 
-            <div className="flex">
+            <div className="flex max-1300:flex-col h-[767px] overflow-y-auto custom-scrollbar">
 
                 <div className="flex-[1]">{renderContent()}</div>
 
 
-                <div className="flex-[1] py-4">
+                <div className="flex-[1] py-4 px-[40px] pb-[100px] max-1300:pb-[200px]  min-1300:overflow-y-auto custom-scrollbar">
                     <h1 className="text-slate400">// Code snippet showcase:</h1>
+
+                    <SnippetList />
                 </div>
             </div>
 

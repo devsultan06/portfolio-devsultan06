@@ -1,6 +1,6 @@
 const AboutMe = () => {
     return (
-        <div className="h-[667px] overflow-y-auto custom-scrollbar px-[40px] text-slate400 text-[18px] font-[450] pt-[12px] pb-[100px] leading-[32px]">
+        <div className="h-[667px] max-1300:h-fit max-1300:overflow-hidden overflow-y-auto custom-scrollbar px-[40px] text-slate400 text-[18px] font-[450] pt-[12px] pb-[100px] leading-[32px]">
             <p className="mb-[10px]"><span className="mr-[40px]">1</span>  /**</p>
             <p className="mb-[10px]"><span className="mr-[40px]">2</span> <span></span>   * About Me</p>
             <p className="mb-[10px]"><span className="mr-[40px]">3</span>   <span></span>* I'm Sultan  a front-end developer who enjoys crafting clean, responsive user interfaces with attention to both aesthetics and structure.</p>

@@ -1,7 +1,7 @@
 
 const Uirefine = () => {
     return (
-        <div className="h-[667px] overflow-y-auto custom-scrollbar px-[40px] text-slate400 text-[18px] font-[450] pt-[12px] pb-[100px] leading-[32px]">
+        <div className="h-[667px]  max-1300:h-fit  overflow-y-auto custom-scrollbar px-[40px] text-slate400 text-[18px] font-[450] pt-[12px] pb-[100px] leading-[32px]">
             <p className="mb-[10px]"><span className="mr-[40px]">1</span>  /**</p>
             <p className="mb-[10px]"><span className="mr-[40px]">2</span> <span></span>   * UI Refinement</p>
             <p className="mb-[10px]"><span className="mr-[40px]">3</span>   <span></span>* I value clean UI — not just visually, but structurally. I obsess over spacing, component hierarchy, and making things feel ‘just right.’</p>

@@ -3,6 +3,7 @@ import ContentWriting from "./ContentWriting";
 import HighSchool from "./HighSchool";
 import Hobbies from "./Hobbies";
 import MyCV from "./MyCV";
+import MyStack from "./MyStack";
 import ProSolving from "./ProSolving";
 import Self from "./Self";
 import SnippetList from "./SnippetList";
@@ -28,6 +29,8 @@ const PanelRight = ({
                 return <AboutMe />;
             case "my-cv":
                 return <MyCV />;
+            case "my-stack":
+                return <MyStack />;
             case "hobbies":
                 return <Hobbies />;
             case "university":

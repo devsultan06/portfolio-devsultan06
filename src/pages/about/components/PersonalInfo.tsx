@@ -61,6 +61,11 @@ const PersonalInfo = ({
                                     >                                        <img src="/images/mark.svg" alt="dot" />
                                         <p>about-me</p>
                                     </div>
+                                      <div onClick={() => onBarChange("my-stack")} className={`flex transition-all duration-400 cursor-pointer gap-[8px] text-[16px] mb-[8px] hover:text-slate50 ${activeTab === "my-stack" ? "text-slate50" : ""}`}
+                                    >
+                                        <img src="/images/mark.svg" alt="dot" />
+                                        <p>my-stack</p>
+                                    </div>
                                     <div onClick={() => onBarChange("my-cv")} className={`flex transition-all duration-400 cursor-pointer gap-[8px] text-[16px] mb-[8px] hover:text-slate50 ${activeTab === "my-cv" ? "text-slate50" : ""}`}
                                     >
                                         <img src="/images/mark.svg" alt="dot" />

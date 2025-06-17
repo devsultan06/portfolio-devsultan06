@@ -18,9 +18,9 @@ export type Project = {
 
 export const projects: Project[] = [
     {
-        title: "Project 1",
-        slug: "ui-animations",
-        description: "Duis aute irure dolor in velit esse cillum dolore.",
+        title: "StreamVibe",
+        slug: "streamvibe",
+        description: "StreamVibe is a subscription-based streaming service built with ReactJS and Tailwind which provides thousands of internet-connected devices with access to an extensive selection of highly acclaimed TV series, films, anime, documentaries, and more.",
         image: "/images/pro1.png",
         tech: {
             id: "react",

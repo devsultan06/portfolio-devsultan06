@@ -37,7 +37,7 @@
 }
 /* globals.css or your component css */
 .custom-scrollbar::-webkit-scrollbar {
-  width: 24px;
+  width: 5px;
     height: 20px; /* makes it appear shorter */
 
 }
@@ -66,9 +66,9 @@
 
 .custom-scrollbar2 {
   overflow-x: auto;
-  white-space: nowrap;
+ 
   scrollbar-width: thin; /* Firefox */
-  scrollbar-color: #4b5563 transparent; /* Thumb color and transparent track */
+  scrollbar-color: #62748E transparent; /* Thumb color and transparent track */
 }
 
 /* WebKit Browsers (Chrome, Edge, Safari) */

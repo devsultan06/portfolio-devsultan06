@@ -1,6 +1,8 @@
 import { useEffect } from "react"
 import Navbar from "../../components/layout/Navbar";
 import Footer from "../../components/layout/Footer";
+import ProjectsSidebar from "./components/ProjectsSidebar";
+import ProjectsPanel from "./components/ProjectsPanel";
 
 const Projects = () => {
 
@@ -15,6 +17,17 @@ const Projects = () => {
     return (
         <div className="font-firacode">
             <Navbar />
+
+            <div className="h-[667px] max-1300:h-[667px] max-1300:overflow-y-auto flex max-900:flex-col">
+                <ProjectsSidebar />
+
+                <div className="flex-[3] bg-slate900 text-white overflow-hidden relative">
+                    <ProjectsPanel
+                   
+                    />
+
+                </div>
+            </div>
 
             <Footer />
 

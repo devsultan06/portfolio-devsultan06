@@ -22,7 +22,7 @@ import { VscVscode } from "react-icons/vsc";
 
 const MyStack = () => {
     return (
-        <div className="h-[667px] max-1300:h-fit overflow-y-auto custom-scrollbar px-[40px] text-slate400 text-[18px] font-[450] pt-[12px] pb-[100px] leading-[32px]">
+        <div className="h-[663px] max-1300:h-fit overflow-y-auto custom-scrollbar px-[40px] text-slate400 text-[18px] font-[450] pt-[12px] pb-[100px] leading-[32px]">
             <p className="mb-[10px]"><span className="mr-[40px]">1</span>  /**</p>
             <p className="mb-[10px]"><span className="mr-[40px]">2</span>   * My Tech Stack</p>
             <p className="mb-[10px]"><span className="mr-[40px]">3</span>   * Here's a categorized list of tools & technologies I work with:</p>

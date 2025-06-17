@@ -64,7 +64,7 @@ const About = () => {
         <div className="font-firacode">
             <Navbar />
 
-            <div className="h-[667px] max-1300:h-[667px] max-1300:overflow-y-auto flex max-900:flex-col">
+            <div className="h-[663px] max-1300:h-[667px] max-1300:overflow-y-auto flex max-900:flex-col">
                 <Sidebar onSectionChange={setActiveSection} activeTab={activeTab} onBarChange={handleBarChange} active={activeSection} />
 
 

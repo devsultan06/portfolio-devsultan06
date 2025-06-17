@@ -1,7 +1,7 @@
 
 const HighSchool = () => {
     return (
-        <div className="h-[667px]  max-1300:h-fit  overflow-y-auto custom-scrollbar px-[40px] text-slate400 text-[18px] font-[450] pt-[12px] pb-[100px] leading-[32px]">
+        <div className="h-[663px]  max-1300:h-fit  overflow-y-auto custom-scrollbar px-[40px] text-slate400 text-[18px] font-[450] pt-[12px] pb-[100px] leading-[32px]">
             <p className="mb-[10px]"><span className="mr-[40px]">1</span>  /**</p>
             <p className="mb-[10px]"><span className="mr-[40px]">2</span> <span></span>   * High-School</p>
             <p className="mb-[10px]"><span className="mr-[40px]">3</span>   <span></span>*     Completed my secondary education at <strong>Ago Iwoye Secondary School</strong>, where I first became curious about how technology works.

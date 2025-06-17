@@ -18,12 +18,12 @@ const Projects = () => {
         <div className="font-firacode">
             <Navbar />
 
-            <div className="h-[667px] max-1300:h-[667px] max-1300:overflow-y-auto flex max-900:flex-col">
+            <div className="h-[663px] max-1300:h-[667px] max-1300:overflow-y-auto flex max-900:flex-col">
                 <ProjectsSidebar />
 
-                <div className="flex-[3] bg-slate900 text-white overflow-hidden relative">
+                <div className="flex-[3] overflow-y-auto custom-scrollbar2 bg-slate900 text-white overflow-hidden relative">
                     <ProjectsPanel
-                   
+
                     />
 
                 </div>

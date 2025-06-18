@@ -5,7 +5,7 @@ import Footer from "../../components/layout/Footer";
 const Contact = () => {
 
     useEffect(() => {
-        document.title = "Contact - devsultan06";
+        document.title = "contact - devsultan06";
 
         return () => {
             document.title = "Portfolio";

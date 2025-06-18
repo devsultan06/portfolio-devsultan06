@@ -7,7 +7,7 @@ import PanelRight from "./components/PanelRight";
 const About = () => {
 
     useEffect(() => {
-        document.title = "About - devsultan06";
+        document.title = "about - devsultan06";
 
         return () => {
             document.title = "Portfolio";
@@ -19,12 +19,10 @@ const About = () => {
     const [openedTabs, setOpenedTabs] = useState<string[]>([]);
     const [activeTab, setActiveTab] = useState<string>("");
 
-    // On mount: Load tabs from localStorage, or initialize with about-me if not closed previously
     useEffect(() => {
         const savedTabs = JSON.parse(localStorage.getItem("openedTabs") || "[]");
         const savedActive = localStorage.getItem("activeTab");
 
-        // Ensure about-me is always present
         const initialTabs = savedTabs.includes("about-me")
             ? savedTabs
             : ["about-me", ...savedTabs];
@@ -33,13 +31,11 @@ const About = () => {
         setActiveTab(savedActive || "about-me");
     }, []);
 
-    // Save openedTabs and activeTab to localStorage on any change
     useEffect(() => {
         localStorage.setItem("openedTabs", JSON.stringify(openedTabs));
         localStorage.setItem("activeTab", activeTab);
     }, [openedTabs, activeTab]);
 
-    // This function is passed to the left panel to open new tabs
     const handleBarChange = (bar: string) => {
         if (!openedTabs.includes(bar)) {
             setOpenedTabs([...openedTabs, bar]);
@@ -48,7 +44,6 @@ const About = () => {
     };
 
     const handleCloseTab = (tab: string) => {
-        // Prevent closing "about-me"
         if (tab === "about-me") return;
 
         const newTabs = openedTabs.filter((t) => t !== tab);
@@ -64,7 +59,7 @@ const About = () => {
         <div className="font-firacode">
             <Navbar />
 
-            <div className="h-[663px] max-1300:h-[667px] max-1300:overflow-y-auto flex max-900:flex-col">
+            <div className="h-[663px] max-900:h-[700px] max-1300:overflow-y-auto flex max-900:flex-col">
                 <Sidebar onSectionChange={setActiveSection} activeTab={activeTab} onBarChange={handleBarChange} active={activeSection} />
 
 

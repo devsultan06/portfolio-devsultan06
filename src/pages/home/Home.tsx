@@ -41,7 +41,7 @@ const SVG2 = () => {
 const Home = () => {
 
     useEffect(() => {
-        document.title = "Home - devsultan06";
+        document.title = "home - devsultan06";
 
         return () => {
             document.title = "Portfolio";

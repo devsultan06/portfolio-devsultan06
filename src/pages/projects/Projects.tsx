@@ -7,7 +7,7 @@ import ProjectsPanel from "./components/ProjectsPanel";
 const Projects = () => {
 
     useEffect(() => {
-        document.title = "Projects - devsultan06";
+        document.title = "projects - devsultan06";
 
         return () => {
             document.title = "Portfolio";
@@ -18,7 +18,7 @@ const Projects = () => {
         <div className="font-firacode">
             <Navbar />
 
-            <div className="h-[663px] max-1300:h-[667px] max-1300:overflow-y-auto flex max-900:flex-col">
+            <div className="h-[663px] max-900:h-[700px] flex max-900:flex-col">
                 <ProjectsSidebar />
 
                 <div className="flex-[3] max-900:p-[24px] p-[64px] overflow-y-auto custom-scrollbar2 bg-slate900  overflow-hidden relative">

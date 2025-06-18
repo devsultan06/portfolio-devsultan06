@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import "../public/fonts/font.css"
 import App from './App.tsx'
-import LenisProvider from './components/ui/LenisProvider.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

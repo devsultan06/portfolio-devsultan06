@@ -115,7 +115,7 @@ export const projects: Project[] = [
     },
 
     {
-        title: "Project 7",
+        title: "Project 8",
         slug: "sporta-ai",
         description: "Sporta AI is an innovative sports- tech company leveraging artificial intelligence to revolutionize performance analytics for athletes, coaches, and teams",
         tech: {
@@ -126,7 +126,7 @@ export const projects: Project[] = [
     },
 
     {
-        title: "Project 8",
+        title: "Project 9",
         slug: "customer-table",
         description: "A customer management dashboard built to handle customer records efficiently. ",
         tech: {
@@ -137,7 +137,7 @@ export const projects: Project[] = [
     },
 
     {
-        title: "Project 9",
+        title: "Project 10",
         slug: "organic-mind",
         description: "Organic Mind is customized for individuals seeking a stress-free way to stay focused on their goals, projects, and tasks.",
         tech: {
@@ -148,7 +148,7 @@ export const projects: Project[] = [
     },
 
     {
-        title: "Project 10",
+        title: "Project 11",
         slug: "pokemon",
         description: "A comprehensive Pokémon dict., featuring all the species from across the various regions.",
         tech: {
@@ -159,7 +159,7 @@ export const projects: Project[] = [
     },
 
     {
-        title: "Project 11",
+        title: "Project 12",
         slug: "narc-alert",
         description: "Narc alert is a platform to supporting survivor of narcissistic abuse and fostering a community of strength, healing, and empowerment",
         tech: {
@@ -171,7 +171,7 @@ export const projects: Project[] = [
     },
 
     {
-        title: "Project 12",
+        title: "Project 13",
         slug: "food-app",
         description: "Food app is a mobile or web application designed to help users with various aspects related to food. It's only available on mobile for now",
         tech: {
@@ -183,7 +183,7 @@ export const projects: Project[] = [
     },
 
     {
-        title: "Project 13",
+        title: "Project 14",
         slug: "cgpa-calculator",
         description: "This app is a CGPA (Cumulative Grade Point Average) Calculator designed to help students calculate their CGPA based on their course grades and credit units. The app provides a user-friendly interface where students can input their course details, including the course name, credit units, and scores. The app then calculates the CGPA.",
         tech: {

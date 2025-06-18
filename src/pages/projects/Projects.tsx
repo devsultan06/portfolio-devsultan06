@@ -21,7 +21,7 @@ const Projects = () => {
             <div className="h-[663px] max-1300:h-[667px] max-1300:overflow-y-auto flex max-900:flex-col">
                 <ProjectsSidebar />
 
-                <div className="flex-[3] p-[64px] overflow-y-auto custom-scrollbar2 bg-slate900  overflow-hidden relative">
+                <div className="flex-[3] max-900:p-[24px] p-[64px] overflow-y-auto custom-scrollbar2 bg-slate900  overflow-hidden relative">
                     <ProjectsPanel
 
                     />

@@ -20,7 +20,7 @@ const Hello = () => {
     }, []);
 
     return (
-        <div className="py-[125px] bg-slate900 font-[450] max-900:flex-col-reverse max-900:mx-auto flex justify-center items-center gap-[146px] max-1200:gap-[0px]">
+        <div className="py-[155px] bg-slate900 font-[450] max-900:flex-col-reverse max-900:mx-auto flex justify-center items-center gap-[146px] max-1200:gap-[0px]">
             <div className="relative z-30 max-900:pl-[24px]">
                 {showLine1 && (
                     <h1 className="text-[18px] text-slate400 mb-[4px]">

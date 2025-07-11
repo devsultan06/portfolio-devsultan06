@@ -2,15 +2,10 @@
 const MyCV = () => {
     return (
         <div className="h-[663px]  max-1300:h-fit  overflow-y-auto custom-scrollbar px-[40px] text-slate400 text-[18px] font-[450] pt-[12px] pb-[100px] leading-[32px]">
-            <p className="mb-[10px]"><span className="mr-[40px]">1</span>  /**</p>
-            <p className="mb-[10px]"><span className="mr-[40px]">2</span> <span></span>   * Resume</p>
-            <p className="mb-[10px]"><span className="mr-[40px]">3</span>   <span></span>*  Here’s a downloadable version of my CV.
+   
+            <p className="mb-[10px]">Here’s a downloadable version of my CV. It covers my tech stack, experience, projects,
+                education, and more.
             </p>
-            <p className="mb-[10px]"><span className="mr-[40px]">4</span> <span></span>   *  It covers my tech stack, experience, </p>
-            <p className="mb-[10px]"><span className="mr-[85px]"></span> <span></span>     projects,
-                education, and more.</p>
-
-            <p className="mb-[10px]"><span className="mr-[40px]">5</span>   */</p>
 
 
             <a href="/files/cv.pdf" download>

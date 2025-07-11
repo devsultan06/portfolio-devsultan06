@@ -52,11 +52,11 @@ const Home = () => {
         <div className="font-firacode relative overflow-hidden">
             <Navbar />
 
-            <div className="absolute -top-[40px] right-[120px] max-900:right-[0px]  z-10">
+            <div className="absolute -top-[40px] right-[120px] max-900:right-[0px]  z-30">
                 <SVG />
             </div>
 
-             <div className="absolute top-[80px] -right-[40px]  z-10">
+             <div className="absolute top-[80px] -right-[40px]  z-30">
                 <SVG2 />
             </div>
 
